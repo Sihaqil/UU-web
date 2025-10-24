@@ -38,12 +38,10 @@
       </ul>
       
 
-      </div>?
       
-    </div>
 
     <section>
-      <p>Viktig beskjed: Les dette! Klikk her! Klikk her! Klikk her! Veldig viktig! ✨</p>
+      <h2><a href="#" mer her for viktig informasjon ang eksamen></a></h2>
     </section>
 
     
@@ -51,20 +49,22 @@
         <aside>
           <section class="card" id="sekjson">
             <h4>Nyheter</h4> <!-- bevisst: hopper over h1/h2/h3 -->
-            <p>
+            <article>
               <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt=""> <!-- bevisst: tom alt på meningsbærende bilde -->
               <a class="tiny-link" href="#">Klikk her</a> for å lese mer om ting.
-            </p>
+            </article>
+
             <p class="status-ok">Tilgjengelig</p>
             <p class="status-bad">Utilgjengelig</p>
           </section>
 
           <section>
             <h4>Språk</h4>
-            <p>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="no"> <!-- bevisst: alt «no» er ikke beskrivende -->
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="en">
-            </p>
+            <ul>
+             <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="no" title="Norsk bokmål"></li> <!-- bevisst: alt «no» er ikke beskrivende -->
+              <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="en" title="Engelsk"></li>
+            </ul>
+
           </section>
         </aside>
 
@@ -80,7 +80,7 @@
            
          
 
-          <div class="card form">
+          <article">
             <h4>Kontakt oss</h4>
             <label>
             <input type="text" id="navn" placeholder="Kari Nordmann" required>
@@ -101,38 +101,55 @@
             <p class="help">Felt merket med <span class="required">rød farge</span> er obligatoriske.</p>
             <p class="error">skjemaet er feil utfylt</p> <!-- bevisst: lav kontrast på feilmelding, små bokstaver -->
             <input type="submit" value="send">
-          </div>
+          </article>
 
-          <div class="card weird-order">
+          <article>
             <h4>Mer innhold</h4>
-            <p>
-              <a href="#" tabindex="3">Les mer</a> |
-              <a href="#" tabindex="1">Klikk her</a> |
-              <a href="#" tabindex="2">Trykk her</a>
-            </p>
-            <p>
-              <span class="btn" tabindex="4">Primær handling</span>
-            </p>
-          </div>
+            <ol>
+              <li><a href="#">Les mer om eksamensoppagave 1 her</a></li>
+             <li><a href="#">Mer informasjon om eksmanesoppgave 2 her</a></li>  
+             <li><a href="#">Informasjon og eksmanesoppgave 3 her</a></li>
+            </ol>
+          <button>Start eksamen</button>
+          </article>
 
-          <div class="card">
+          <article>
             <h4>Tabell uten overskrifter</h4>
-            <table border="1" width="100%">
-              <tr><td>1</td><td>2</td><td>3</td></tr>
-              <tr><td>4</td><td>5</td><td>6</td></tr>
-              <tr><td>7</td><td>8</td><td>9</td></tr>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Klonne 1</th>
+                  <th>Klonne 2</th>
+                  <th>Klonne 3</th>
+                </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+              </tr>
+            </tbody>
             </table>
-          </div>
+          </article>
 
-          <div class="card">
+          <article>
             <h4>Masse lenker med samme tekst</h4>
             <ul>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
+              <li><a href="#">Oppgave om UU</a></li>
+              <li><a href="#">Oppgave om SEO</a></li>
+              <li><a href="#">Oppgave om semantiskk HTML</a></li>
+              <li><a href="#">Oppgave om CSS Grid og Flex</a></li>
             </ul>
-          </div>
+          </article>
           </section>
         </main>
        
